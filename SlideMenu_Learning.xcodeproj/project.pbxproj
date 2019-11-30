@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,17 @@
 		38A51328239251820016298B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A51326239251820016298B /* LaunchScreen.storyboard */; };
 		38A51333239251820016298B /* SlideMenu_LearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A51332239251820016298B /* SlideMenu_LearningTests.swift */; };
 		38A5133E239251820016298B /* SlideMenu_LearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5133D239251820016298B /* SlideMenu_LearningUITests.swift */; };
+		38A5134E239252050016298B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5134C239252050016298B /* HomeViewController.swift */; };
+		38A5134F239252050016298B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A5134D239252050016298B /* HomeViewController.xib */; };
+		38A51352239253BA0016298B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A51350239253B90016298B /* MainViewController.swift */; };
+		38A51353239253BA0016298B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A51351239253B90016298B /* MainViewController.xib */; };
+		38A513562392540F0016298B /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A513542392540F0016298B /* SlideMenuViewController.swift */; };
+		38A513572392540F0016298B /* SlideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A513552392540F0016298B /* SlideMenuViewController.xib */; };
+		38A5135A2392788D0016298B /* tableslideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A513582392788D0016298B /* tableslideViewController.swift */; };
+		38A5135B2392788D0016298B /* tableslideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A513592392788D0016298B /* tableslideViewController.xib */; };
+		38A5135F239297160016298B /* SlideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5135D239297160016298B /* SlideMenuTableViewCell.swift */; };
+		38A51360239297160016298B /* SlideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A5135E239297160016298B /* SlideMenuTableViewCell.xib */; };
+		C244E1730C13825338833213 /* Pods_SlideMenu_Learning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E8282FC519346D1F8EAED2 /* Pods_SlideMenu_Learning.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25984C7530EF7B087CC98F2B /* Pods-SlideMenu_Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideMenu_Learning.debug.xcconfig"; path = "Target Support Files/Pods-SlideMenu_Learning/Pods-SlideMenu_Learning.debug.xcconfig"; sourceTree = "<group>"; };
 		38A51318239251790016298B /* SlideMenu_Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideMenu_Learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A5131B239251790016298B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38A5131D239251790016298B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +61,18 @@
 		38A51339239251820016298B /* SlideMenu_LearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideMenu_LearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A5133D239251820016298B /* SlideMenu_LearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenu_LearningUITests.swift; sourceTree = "<group>"; };
 		38A5133F239251820016298B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38A5134C239252050016298B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		38A5134D239252050016298B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		38A51350239253B90016298B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		38A51351239253B90016298B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		38A513542392540F0016298B /* SlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
+		38A513552392540F0016298B /* SlideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideMenuViewController.xib; sourceTree = "<group>"; };
+		38A513582392788D0016298B /* tableslideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableslideViewController.swift; sourceTree = "<group>"; };
+		38A513592392788D0016298B /* tableslideViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tableslideViewController.xib; sourceTree = "<group>"; };
+		38A5135D239297160016298B /* SlideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		38A5135E239297160016298B /* SlideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		870ED6E210584FB7B2B4F2EE /* Pods-SlideMenu_Learning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideMenu_Learning.release.xcconfig"; path = "Target Support Files/Pods-SlideMenu_Learning/Pods-SlideMenu_Learning.release.xcconfig"; sourceTree = "<group>"; };
+		A3E8282FC519346D1F8EAED2 /* Pods_SlideMenu_Learning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideMenu_Learning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C244E1730C13825338833213 /* Pods_SlideMenu_Learning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E09CB6691B856ECDD253454 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3E8282FC519346D1F8EAED2 /* Pods_SlideMenu_Learning.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		38A5130F239251790016298B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +116,8 @@
 				38A51331239251820016298B /* SlideMenu_LearningTests */,
 				38A5133C239251820016298B /* SlideMenu_LearningUITests */,
 				38A51319239251790016298B /* Products */,
+				52D4C7CA3D74E89007051A9D /* Pods */,
+				2E09CB6691B856ECDD253454 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +134,8 @@
 		38A5131A239251790016298B /* SlideMenu_Learning */ = {
 			isa = PBXGroup;
 			children = (
+				38A5135C239296EA0016298B /* Cell */,
+				38A5134B239251E40016298B /* View */,
 				38A5131B239251790016298B /* AppDelegate.swift */,
 				38A5131D239251790016298B /* SceneDelegate.swift */,
 				38A5131F239251790016298B /* ContentView.swift */,
@@ -136,6 +173,39 @@
 			path = SlideMenu_LearningUITests;
 			sourceTree = "<group>";
 		};
+		38A5134B239251E40016298B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				38A5134C239252050016298B /* HomeViewController.swift */,
+				38A5134D239252050016298B /* HomeViewController.xib */,
+				38A51350239253B90016298B /* MainViewController.swift */,
+				38A51351239253B90016298B /* MainViewController.xib */,
+				38A513542392540F0016298B /* SlideMenuViewController.swift */,
+				38A513552392540F0016298B /* SlideMenuViewController.xib */,
+				38A513582392788D0016298B /* tableslideViewController.swift */,
+				38A513592392788D0016298B /* tableslideViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		38A5135C239296EA0016298B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				38A5135D239297160016298B /* SlideMenuTableViewCell.swift */,
+				38A5135E239297160016298B /* SlideMenuTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		52D4C7CA3D74E89007051A9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25984C7530EF7B087CC98F2B /* Pods-SlideMenu_Learning.debug.xcconfig */,
+				870ED6E210584FB7B2B4F2EE /* Pods-SlideMenu_Learning.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38A51342239251820016298B /* Build configuration list for PBXNativeTarget "SlideMenu_Learning" */;
 			buildPhases = (
+				5171956158F64AC88CD0B2AB /* [CP] Check Pods Manifest.lock */,
 				38A51314239251790016298B /* Sources */,
 				38A51315239251790016298B /* Frameworks */,
 				38A51316239251790016298B /* Resources */,
+				C823A203FF9B5E35D5E8313B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,7 +314,12 @@
 			files = (
 				38A51328239251820016298B /* LaunchScreen.storyboard in Resources */,
 				38A51325239251820016298B /* Preview Assets.xcassets in Resources */,
+				38A5135B2392788D0016298B /* tableslideViewController.xib in Resources */,
+				38A51353239253BA0016298B /* MainViewController.xib in Resources */,
+				38A51360239297160016298B /* SlideMenuTableViewCell.xib in Resources */,
+				38A513572392540F0016298B /* SlideMenuViewController.xib in Resources */,
 				38A51322239251820016298B /* Assets.xcassets in Resources */,
+				38A5134F239252050016298B /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,14 +339,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5171956158F64AC88CD0B2AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlideMenu_Learning-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C823A203FF9B5E35D5E8313B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlideMenu_Learning/Pods-SlideMenu_Learning-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SlideMenu_Learning/Pods-SlideMenu_Learning-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SlideMenu_Learning/Pods-SlideMenu_Learning-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38A51314239251790016298B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A5135F239297160016298B /* SlideMenuTableViewCell.swift in Sources */,
 				38A5131C239251790016298B /* AppDelegate.swift in Sources */,
+				38A513562392540F0016298B /* SlideMenuViewController.swift in Sources */,
 				38A5131E239251790016298B /* SceneDelegate.swift in Sources */,
 				38A51320239251790016298B /* ContentView.swift in Sources */,
+				38A5134E239252050016298B /* HomeViewController.swift in Sources */,
+				38A5135A2392788D0016298B /* tableslideViewController.swift in Sources */,
+				38A51352239253BA0016298B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +556,7 @@
 		};
 		38A51343239251820016298B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25984C7530EF7B087CC98F2B /* Pods-SlideMenu_Learning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +577,7 @@
 		};
 		38A51344239251820016298B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 870ED6E210584FB7B2B4F2EE /* Pods-SlideMenu_Learning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
