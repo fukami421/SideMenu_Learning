@@ -45,6 +45,7 @@ class SlideMenuViewController: UIViewController {
         super.viewDidLoad()
         self.setUpUI()
         self.bind()
+        self.contentRatio = 0
         var contentRect = view.bounds
         contentRect.size.width = contentMaxWidth
         contentRect.origin.x = -contentRect.width
@@ -58,13 +59,10 @@ class SlideMenuViewController: UIViewController {
     }
     
     @objc private func backgroundTapped(sender: UITapGestureRecognizer) {
-        if sender.view?.tag == 1
-        {
-            hideContentView(animated: true) { (_) in
-                self.willMove(toParent: nil)
-                self.removeFromParent()
-                self.view.removeFromSuperview()
-            }
+        hideContentView(animated: true) { (_) in
+            self.willMove(toParent: nil)
+            self.removeFromParent()
+            self.view.removeFromSuperview()
         }
     }
 
@@ -122,6 +120,7 @@ class SlideMenuViewController: UIViewController {
             if translation.x  >= 0 {
                 self.delegate?.sidemenuViewControllerDidRequestShowing(self, contentAvailability: false, animated: false)
             }
+            
         case .changed:
             let distance = beganState ? beganLocation.x - location.x : location.x - beganLocation.x
             if distance >= 0 {
@@ -173,7 +172,11 @@ class SlideMenuViewController: UIViewController {
 }
 
 extension SlideMenuViewController: UIGestureRecognizerDelegate {
-    internal func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        if touch.view?.tag == 1
+        {
+            return false
+        }
         return true
     }
 }

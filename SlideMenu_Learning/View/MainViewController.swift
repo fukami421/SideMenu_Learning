@@ -11,22 +11,22 @@ import RxSwift
 import RxCocoa
 
 class MainViewController: UIViewController {
-    let contentViewController = UINavigationController(rootViewController: UIViewController())
-    let sidemenuViewController = SlideMenuViewController.init(nibName: nil, bundle: nil)
+    let contentVC = UINavigationController(rootViewController: UIViewController())
+    let sidemenuVC = SlideMenuViewController.init(nibName: nil, bundle: nil)
     private var isShownSidemenu: Bool {
-        return sidemenuViewController.parent == self
+        return sidemenuVC.parent == self
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpNav()
-        contentViewController.viewControllers[0].navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sidemenu", style: .plain, target: self, action: #selector(sidemenuBarButtonTapped(sender:)))
-        addChild(contentViewController)
-        view.addSubview(contentViewController.view)
-        contentViewController.didMove(toParent: self)
+        self.contentVC.view.frame = self.view.bounds
+        addChild(contentVC)
+        view.addSubview(contentVC.view)
+        contentVC.didMove(toParent: self)
 
-        sidemenuViewController.delegate = self
-        sidemenuViewController.startPanGestureRecognizing()
+        sidemenuVC.delegate = self
+        sidemenuVC.startPanGestureRecognizing()
     }
     
     @objc private func sidemenuBarButtonTapped(sender: Any) {
@@ -35,31 +35,30 @@ class MainViewController: UIViewController {
     
     private func showSidemenu(contentAvailability: Bool = true, animated: Bool) {
         if isShownSidemenu { return }
-
-        addChild(sidemenuViewController)
-        sidemenuViewController.view.autoresizingMask = .flexibleHeight
-        sidemenuViewController.view.frame = contentViewController.view.bounds
-        view.insertSubview(sidemenuViewController.view, aboveSubview: contentViewController.view)
-        sidemenuViewController.didMove(toParent: self)
+        addChild(sidemenuVC)
+        sidemenuVC.view.autoresizingMask = .flexibleHeight
+        sidemenuVC.view.frame = self.view.frame
+        view.insertSubview(sidemenuVC.view, aboveSubview: contentVC.view)
+        sidemenuVC.didMove(toParent: self)
         if contentAvailability {
-            sidemenuViewController.showContentView(animated: animated)
+            sidemenuVC.showContentView(animated: animated)
         }
     }
 
     private func hideSidemenu(animated: Bool) {
         if !isShownSidemenu { return }
 
-        sidemenuViewController.hideContentView(animated: animated, completion: { (_) in
-            self.sidemenuViewController.willMove(toParent: nil)
-            self.sidemenuViewController.removeFromParent()
-            self.sidemenuViewController.view.removeFromSuperview()
+        sidemenuVC.hideContentView(animated: animated, completion: { (_) in
+            self.sidemenuVC.willMove(toParent: nil)
+            self.sidemenuVC.removeFromParent()
+            self.sidemenuVC.view.removeFromSuperview()
         })
     }
 
     func setUpNav()
     {
-        self.title = "Main"
-//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Side", style: UIBarButtonItem.Style.plain, target: self, action:#selector(self.move))
+        contentVC.viewControllers[0].title = "Main"
+//        contentVC.viewControllers[0].navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sidemenu", style: .plain, target: self, action: #selector(sidemenuBarButtonTapped(sender:)))
     }
     
     @objc func move(){

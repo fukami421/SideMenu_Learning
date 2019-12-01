@@ -31,6 +31,7 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rmg-ri-b4J" secondAttribute="trailing" constant="20" id="H63-op-hVk"/>
                 <constraint firstItem="rmg-ri-b4J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="QfU-wg-7aL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rmg-ri-b4J" secondAttribute="bottom" constant="577" id="WjW-na-W5v"/>
                 <constraint firstItem="rmg-ri-b4J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="188" id="mcQ-KQ-AMo"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
