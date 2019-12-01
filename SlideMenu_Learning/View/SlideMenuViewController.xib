@@ -9,8 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SlideMenuViewController" customModule="SlideMenu_Learning" customModuleProvider="target">
             <connections>
+                <outlet property="contentView" destination="HdZ-px-tpD" id="BOv-TG-OhX"/>
                 <outlet property="imageAicon" destination="CgC-CI-2Es" id="GIe-71-4S9"/>
-                <outlet property="menuView" destination="HdZ-px-tpD" id="3Ae-oE-S0c"/>
+                <outlet property="menuView" destination="HdZ-px-tpD" id="skQ-OI-Plh"/>
                 <outlet property="tableView" destination="3pk-xw-jnv" id="ZyA-Ll-f9Y"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -114,7 +115,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HdZ-px-tpD" secondAttribute="trailing" constant="78" id="Q3H-kc-33l"/>
                 <constraint firstItem="HdZ-px-tpD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SjG-Mm-hIA"/>

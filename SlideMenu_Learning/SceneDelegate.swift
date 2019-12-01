@@ -22,7 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UINavigationController(rootViewController: MainViewController.init(nibName: nil, bundle: nil))
+            window.rootViewController = MainViewController.init(nibName: nil, bundle: nil)
+//            window.rootViewController = UINavigationController(rootViewController: MainViewController.init(nibName: nil, bundle: nil))
             self.window = window
             window.makeKeyAndVisible()
         }
